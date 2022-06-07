@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_favoritos"
+                android:backgroundTint="@color/color1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+
+                android:stateListAnimator="@null"
+                android:text="FAVORITOS"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/bt_buscar"
+                android:backgroundTint="@color/color1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Buscar"
+                android:layout_marginLeft="10dp"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/bt_cerca"
+                android:backgroundTint="@color/color1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="Cerca"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/bt_compartir"
+                android:backgroundTint="@color/color1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Compartir"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="69.5dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_destinos"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/color2"
+                android:paddingBottom="5dp"
+                android:text="Destinos Turisticos"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_agencias"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/color3"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="1dp"
+                android:paddingBottom="5dp"
+                android:text=" Agencias"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/color4"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:text=" Restaurantes"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_hoteles"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:backgroundTint="@color/color5"
+                android:text=" Hoteles"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_museos"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/color1"
+                android:text=" Museos e Iglesias"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+
+            <Button
+                android:id="@+id/btn_mapa"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:backgroundTint="@color/color2"
+                android:text="  Mapa"
+                android:textColor="@color/black"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_conversor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:backgroundTint="@color/color3"
+                android:text="  Conversor de Moneda"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_informacion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:includeFontPadding="true"
+                android:backgroundTint="@color/color4"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:text=" Información General"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>
